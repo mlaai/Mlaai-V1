@@ -31,3 +31,15 @@ class helper(object):
         Convert a numpy matrix of shape (m,n) to a numpy matrix equal to the softmax of x, of shape (m,n)
         """
         return np.exp(x)/np.sum(np.exp(x), axis=1, keepdims=True)
+
+    def L1(yHat, y):
+        """
+        Calculate Mean Absolute Error
+        """
+        return np.sum(np.absolute(yHat - y))
+
+    def L2(yHat, y):
+        """
+        Calculate Mean Squared Error
+        """
+        return np.sum((yhat - y)**2)
