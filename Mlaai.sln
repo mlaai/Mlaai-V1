@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29503.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Mlaai", "Mlaai.pyproj", "{F79AC591-47B6-4D4A-865A-87FC09AD6640}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "UnitTesting", "..\UnitTesting\UnitTesting.pyproj", "{7F08919D-DF4C-4AB7-BBCF-E1EB13372744}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{F79AC591-47B6-4D4A-865A-87FC09AD6640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F79AC591-47B6-4D4A-865A-87FC09AD6640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F08919D-DF4C-4AB7-BBCF-E1EB13372744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F08919D-DF4C-4AB7-BBCF-E1EB13372744}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

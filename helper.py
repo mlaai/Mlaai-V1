@@ -12,7 +12,8 @@ class helper(object):
         """
         Compute the gradient of the sigmoid function with respect to its input x
         """
-        return helper.sigmoid(x)*(1 - helper.sigmoid(x))
+        s = helper.sigmoid(x)
+        return s*(1 - s)
 
     def imageToVector(image):
         """
@@ -29,8 +30,9 @@ class helper(object):
     def softmax(x):
         """
         Convert a numpy matrix of shape (m,n) to a numpy matrix equal to the softmax of x, of shape (m,n)
-        """
-        return np.exp(x)/np.sum(np.exp(x), axis=1, keepdims=True)
+        """ 
+        xExp = np.exp(x)
+        return xExp/np.sum(xExp, axis=1, keepdims=True)
 
     def L1(yHat, y):
         """
