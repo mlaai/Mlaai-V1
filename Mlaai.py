@@ -15,7 +15,6 @@ class NeuralNetwork(object):
                                                            self.__dict__['OutputNodes']))
 
         self.activationFunction = lambda x : 1/(1+np.exp(-x))
-        print(self.activationFunction)
         
     def Train(self, features, targets):
         records = features.shape[0]
