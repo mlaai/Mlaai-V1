@@ -18,7 +18,7 @@ class helper(object):
         """
         Convert numpy array of shape (length, height, depth) to a vector of shape (length*height*depth, 1)
         """
-        return image.reshape((image.shape[0]*image.shape[1], image.shape[2]))
+        return image.reshape((image.shape[0]*image.shape[1]*image.shape[2], 1))
 
     def normalizeRows(x):
         """
