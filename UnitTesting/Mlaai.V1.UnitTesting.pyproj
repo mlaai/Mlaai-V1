@@ -5,13 +5,12 @@
     <ProjectGuid>7f08919d-df4c-4ab7-bbcf-e1eb13372744</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>
-    </StartupFile>
+    <StartupFile>test_neuralnetwork.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>Mlaai.UnitTesting</Name>
+    <Name>Mlaai.V1.UnitTesting</Name>
     <RootNamespace>UnitTesting</RootNamespace>
     <TestFramework>unittest</TestFramework>
     <UnitTestPattern>test*.py</UnitTestPattern>
@@ -26,16 +25,19 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Mlaai\Mlaai.pyproj">
-      <Name>Mlaai</Name>
-      <Project>{f79ac591-47b6-4d4a-865a-87fc09ad6640}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="test_helper.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="test_neuralnetwork.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Mlaai.Core.pyproj">
+      <Name>Mlaai.Core</Name>
+      <Project>{f79ac591-47b6-4d4a-865a-87fc09ad6640}</Project>
+      <Private>True</Private>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

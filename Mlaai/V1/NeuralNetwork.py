@@ -1,18 +1,31 @@
 import numpy as np
 import json
 
+class Config(object):
+    def __init__(self, inputNodes, hiddenNodes, outputNodes):
+        self.inputNodes = inputNodes
+        self.hiddenNodes = hiddenNodes
+        self.outputNodes = outputNodes
+
+    def objectDecoder(obj):
+        if '__type__' in obj and obj['__type__'] == 'Config':
+            return Config(obj['InputNodes'], obj['HiddenNodes'], obj['OutputNodes'])
+        return obj
+
 class NeuralNetwork(object):
     def __init__(self, config):
         self.__dict__ = json.loads(config)
+        cf = Config(**self.__dict__)
+
         self.weightsInputToHidden = np.random.normal(0.0, 
-                                                    self.__dict__['InputNodes']**-0.5,
-                                                    (self.__dict__['InputNodes'], 
-                                                        self.__dict__['HiddenNodes']))
+                                                    cf['InputNodes']**-0.5,
+                                                    (cf['InputNodes'], 
+                                                        cf['HiddenNodes']))
         
         self.weightsHiddenToOutput = np.random.normal(0.0, 
-                                                        self.__dict__['HiddenNodes']**-0.5, 
-                                                        (self.__dict__['HiddenNodes'], 
-                                                           self.__dict__['OutputNodes']))
+                                                        cf['HiddenNodes']**-0.5, 
+                                                        (cf['HiddenNodes'], 
+                                                           cf['OutputNodes']))
 
         self.activationFunction = lambda x : 1/(1+np.exp(-x))
         

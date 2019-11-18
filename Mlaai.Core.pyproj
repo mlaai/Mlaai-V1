@@ -22,14 +22,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Mlaai-V1\helper.py" />
-    <Compile Include="Mlaai\Mlaai.py" />
+    <Compile Include="Mlaai\V1\helper.py" />
+    <Compile Include="Mlaai\V1\NeuralNetwork.py" />
     <Compile Include="program.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Mlaai-V1\" />
+    <Folder Include="Mlaai\" />
+    <Folder Include="Mlaai\V1\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
