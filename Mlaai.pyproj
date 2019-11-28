@@ -2,19 +2,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>7f08919d-df4c-4ab7-bbcf-e1eb13372744</ProjectGuid>
+    <ProjectGuid>f79ac591-47b6-4d4a-865a-87fc09ad6640</ProjectGuid>
     <ProjectHome>
     </ProjectHome>
-    <StartupFile>test_neuralnetwork.py</StartupFile>
+    <StartupFile>program.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>Mlaai.V1.UnitTesting</Name>
-    <RootNamespace>UnitTesting</RootNamespace>
-    <TestFramework>unittest</TestFramework>
-    <UnitTestPattern>test*.py</UnitTestPattern>
-    <UnitTestRootDirectory>.</UnitTestRootDirectory>
+    <Name>Mlaai</Name>
+    <RootNamespace>Mlaai</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -25,19 +22,20 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="test_helper.py">
+    <Compile Include="DCGAN.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="test_neuralnetwork.py">
+    <Compile Include="Discriminator.py">
       <SubType>Code</SubType>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Mlaai.Core.pyproj">
-      <Name>Mlaai.Core</Name>
-      <Project>{f79ac591-47b6-4d4a-865a-87fc09ad6640}</Project>
-      <Private>True</Private>
-    </ProjectReference>
+    <Compile Include="Generator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="helper.py" />
+    <Compile Include="NeuralNetwork.py" />
+    <Compile Include="program.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

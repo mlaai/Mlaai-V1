@@ -1,5 +1,5 @@
 import unittest
-import Mlaai.V1 as mlaai
+import Mlaai as mlaai
 
 class Test_Mlaai_V1_NeuralNetwork(unittest.TestCase):
     def test_Neuralnetwork(self):
