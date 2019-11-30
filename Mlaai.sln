@@ -7,7 +7,7 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Mlaai", "Mlaai.pyproj", "{F
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Mlaai.UnitTesting", "UnitTesting\Mlaai.UnitTesting.pyproj", "{7F08919D-DF4C-4AB7-BBCF-E1EB13372744}"
 EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "CNN", "..\CNN\CNN.pyproj", "{246B7525-BE10-42A5-9724-E31587FCA6C8}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "CNN", "CNN\CNN.pyproj", "{246B7525-BE10-42A5-9724-E31587FCA6C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
