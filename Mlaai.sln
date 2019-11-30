@@ -9,6 +9,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Mlaai.UnitTesting", "UnitTe
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "CNN", "CNN\CNN.pyproj", "{246B7525-BE10-42A5-9724-E31587FCA6C8}"
 EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "DCGAN", "DCGAN\DCGAN.pyproj", "{3CA7A432-1007-497D-A24C-C6479790BCB1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,8 @@ Global
 		{7F08919D-DF4C-4AB7-BBCF-E1EB13372744}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{246B7525-BE10-42A5-9724-E31587FCA6C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{246B7525-BE10-42A5-9724-E31587FCA6C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CA7A432-1007-497D-A24C-C6479790BCB1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CA7A432-1007-497D-A24C-C6479790BCB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
